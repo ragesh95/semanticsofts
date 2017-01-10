@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Softs</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../workspace/semantic/dist/semantic.min.css">
+  <script src="../workspace/semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+  <div class="ui labeled icon menu">
+    <a class="item" id="sidebar">
+      <i class="red sidebar icon"></i>
+      Menu
+    </a>
+    <div class="ui sidebar vertical left secondary inverted menu">
+      <div class="item">
+        What's new?
+      </div>
+      <div class="item">
+        Apps
+      </div>
+    </div>
+    <h1 class="ui secondary yellow header" style="width:100px;margin-top:0.7%;margin-left:auto;font-size:40px;">
+      Softs
+    </h1>
+    <a class="active right item" style="border-right:1px solid lightgrey;">
+      <i class="green home icon"></i>
+      Home
+    </a>
+    <a class="item">
+      <i class="green calculator icon"></i>
+      Apps
+    </a>
+    <a class="item">
+      <i class="green setting icon"></i>
+      Service
+    </a>
+    <a class="item">
+      <i class="green info circle icon"></i>
+      About
+    </a>
+    <a class="item">
+      <i class="green call icon"></i>
+      Contact
+    </a>
+  </div>
+  <script>
+    $('#sidebar').click(function(){ $('.ui.sidebar').sidebar('toggle'); });
+  </script>
+</body>
+</html>
