@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Softs</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../dist/semantic.min.css">
+  <script src="../../dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="ui top fixed stackable labeled icon menu">
+    <a class="item" id="sidebar">
+      <i class="red sidebar icon"></i>
+      Menu
+    </a>
+    <div class="ui sidebar vertical left secondary inverted menu">
+      <div class="item">
+        What's new?
+      </div>
+      <div class="item">
+        <div class="apps ui inverted accordion">
+          <div class="title" style="font-color:white;">
+            Apps
+        </div>
+        <div class="content">
+          <ul >
+            <li><a href="" class="appslist">Hack phone</a></li>
+            <li><a href="" class="appslist">Signature Unlocker</a></li>
+            <li><a href="" class="appslist">Voe unlocker</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="ui secondary yellow header" style="width:100px;margin-top:0.7%;margin-left:auto;font-size:40px;">
+      Softs
+    </h1>
+    <a class="right item" style="border-right:1px solid lightgrey;">
+      <i class="green home icon"></i>
+      Home
+    </a>
+    <a class="item">
+      <i class="green calculator icon"></i>
+      Apps
+    </a>
+    <a class="item">
+      <i class="green setting icon"></i>
+      Service
+    </a>
+    <a class="item">
+      <i class="green info circle icon"></i>
+      About
+    </a>
+    <a class="active item">
+      <i class="green call icon"></i>
+      Contact
+    </a>
+  </div>
+
+  <div class="ui container" style="margin-top:100px;">
+    <div class="ui one column center aligned grid">
+      <div class="column six wide form-holder">
+        <h2 class="center aligned header form-head">
+          Contact Us
+        </h2>
+        <div class="ui form">
+          <div class="field">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Mail">
+          </div>
+          <div class="field">
+            <textarea name="name" rows="8" cols="40" placeholder="Feedback"></textarea>
+          </div>
+          <div class="field">
+            <input type="submit" value="Send" class="ui button large fluid green">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui divider" style="margin-top:45px;"></div>
+
+  <footer class="ui container">
+    <div class="ui one column center aligned grid">
+      <i class="ui huge facebook icon"></i>
+      <i class="ui huge twitter icon"></i>
+      <i class="ui huge google plus icon"></i>
+      <i class="ui huge instagram icon"></i>
+    </div>
+  </footer>
+  <script>
+    $('#sidebar').click(function(){ $('.ui.sidebar').sidebar('toggle'); });
+    $('.apps.ui.accordion').accordion();
+  </script>
+</body>
+</html>
