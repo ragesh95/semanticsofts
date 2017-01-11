@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Softs</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../workspace/semantic/dist/semantic.min.css">
-  <script src="../workspace/semantic/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="../dist/semantic.min.css">
+  <script src="../dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="ui labeled icon menu">
+  <div class="ui top fixed stackable labeled icon menu">
     <a class="item" id="sidebar">
       <i class="red sidebar icon"></i>
       Menu
@@ -20,7 +21,18 @@
         What's new?
       </div>
       <div class="item">
-        Apps
+        <div class="apps ui inverted accordion">
+          <div class="title" style="font-color:white;">
+            Apps
+        </div>
+        <div class="content">
+          <ul >
+            <li><a href="" class="appslist">Hack phone</a></li>
+            <li><a href="" class="appslist">Signature Unlocker</a></li>
+            <li><a href="" class="appslist">Voe unlocker</a></li>
+          </ul>
+        </div>
+        </div>
       </div>
     </div>
     <h1 class="ui secondary yellow header" style="width:100px;margin-top:0.7%;margin-left:auto;font-size:40px;">
@@ -47,8 +59,196 @@
       Contact
     </a>
   </div>
+
+  <div class="ui grid">
+    <div class="ui shape">
+      <div class="sides">
+        <div class="active side">
+          <div class="ui raised segment">
+            <a href=""><img src="img/signature.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui raised segment">
+            <a href=""><img src="img/voice2.png" alt=""></a>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui raised segment">
+            <a href=""><img src="img/hack2.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui divider" style="margin-top:95px;"></div>
+
+  <img src="http://mkt-web.gameloft.com/assets/images/home/games_banner_ipad.png" alt="" id="sideimage">
+  <div class="ui container" id="extra">
+    <div class="ui stackable equal width grid">
+      <div class="column"></div>
+      <div class="column">
+        <div class="ui card cstyle">
+          <div class="image">
+            <img src="https://lh3.googleusercontent.com/A4AzZCTgreB48T-O4JRkatqgTYs3FoaGL5CKoKT5ofZvkiWCX3oxZCcpL28MlBHKq1E=w300-rw" alt="">
+          </div>
+          <div class="content">
+            <a href="" class="header">Hack friends phone</a>
+            <div class="meta">
+              <span class="date">
+                Last updated 5 days ago
+              </span>
+            </div>
+          </div>
+          <div class="description">
+            The app which helps you to control friends phone for fun.
+          </div>
+          <div class="extra content">
+            <a href=""><i class="user icon"></i>2,50,000+downloads</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui card cstyle">
+          <div class="image">
+            <img src="https://lh3.googleusercontent.com/kyl-VtCFO-Yvyi2Jfpt_p0sIYGIKfV7b79XfoR9rc3MqqUKE_-j5oBrK01xPwJMYx1oq=w300-rw" alt="">
+          </div>
+          <div class="content">
+            <a href="" class="header">Signature Unlocker</a>
+            <div class="meta">
+              <span class="date">
+                Last updated 10 days ago
+              </span>
+            </div>
+          </div>
+          <div class="description">
+            Unlock your phone using the signature. Unique lock screen.
+          </div>
+          <div class="extra content">
+            <a href=""><i class="user icon"></i>2,50,000+downloads</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui card cstyle">
+          <div class="image">
+            <img src="https://lh3.googleusercontent.com/cA7XygL60bq5rmaBO9NN6A6D6E1C5KBFBQ3GIbFaXChIBkVE_VJjVfMSR4SPfVIU1g=w300-rw" alt="">
+          </div>
+          <div class="content">
+            <a href="" class="header">With you</a>
+            <div class="meta">
+              <span class="date">
+                Last updated a day ago
+              </span>
+            </div>
+          </div>
+          <div class="description">
+            Track others location easily using this application.
+          </div>
+          <div class="extra content">
+            <a href=""><i class="user icon"></i>5,000+downloads</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="ui stackable equal width grid">
+      <div class="column"></div>
+      <div class="column">
+        <div class="ui one column center aligned grid" style="margin-top:20px;">
+          <h3 class="header" style="font-size:20px;color:grey">
+            We make the
+          </h3>
+        </div>
+        <div class="ui one column center aligned grid" style="margin-top:20px;">
+          <h3 class="ui teal header" style="font-size:25px;color:#00bff3">
+            Mightiest best applications
+          </h3>
+        </div>
+        <div class="ui one column center aligned grid" style="margin-top:20px;">
+          <h3 class="header" style="font-size:20px;color:grey">
+            around!
+          </h3>
+        </div>
+      </div>
+      <div class="column">
+          <button class="ui basic teal button" style="margin-top:45px;">More Apps!</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui divider" style="margin-top:45px;"></div>
+
+  <div class="ui stackable equal width grid" style="background-color:white;margin-top:45px;">
+      <div class="column">
+        <img src="http://mkt-web.gameloft.com/assets/images/home/image_job_1.gif" alt="">
+      </div>
+      <div class="column">
+        <h1 class="ui teal header" style="margin-top:95px;font-size:35px;">
+          For developers
+        </h1>
+        <h3 class="ui grey header">
+          Join our developer team so that you can earn easily. API's are released and you can buy it from the API store.
+          You can buy the API by contacting our mail or get it free through advertisement work. Once you reached the number of users under your tree
+          you can get our API for free.
+        </h3>
+        <button class="ui basic teal button">Read More</button>
+      </div>
+      <div class="column"></div>
+  </div>
+
+  <div class="ui divider" style="margin-top:45px;"></div>
+
+  <div class="ui stackable container" style="margin-top:45px;">
+    <div class="ui one column center aligned grid">
+      <h1 class="ui teal header">
+        Mission
+      </h1>
+    </div>
+    <div class="ui one column center aligned grid">
+      <h3 class="ui grey header" style="margin-top:10px;">
+        This is one of the greatest journeys we have undertaken. While we are focused on this mission,
+        we are working equally hard to be the most trusted mobile commerce brand in the country.
+      </h3>
+    </div>
+  </div>
+  <div class="ui container" style="margin-top:45px;">
+    <div class="ui stackable one column center aligned grid">
+      <h1 class="ui teal header">
+        Vission
+      </h1>
+    </div>
+    <div class="ui one column center aligned grid">
+      <h3 class="ui grey header" style="margin-top:10px;">
+        This is one of the greatest journeys we have undertaken. While we are focused on this mission,
+        we are working equally hard to be the most trusted mobile commerce brand in the country.
+      </h3>
+    </div>
+  </div>
+
+  <div class="ui divider" style="margin-top:45px;"></div>
+
+  <footer class="ui container">
+    <div class="ui one column center aligned grid">
+      <i class="ui huge facebook icon"></i>
+      <i class="ui huge twitter icon"></i>
+      <i class="ui huge google plus icon"></i>
+      <i class="ui huge instagram icon"></i>
+    </div>
+  </footer>
   <script>
+    var s=["flip left","flip right","flip over","flip up","flip down","flip back"];
+    var i=0;
+    function flipit(){
+      $('.ui.shape').shape(s[i++]);
+      if(i>=6)
+        i=0;
+    }
+    setInterval(flipit, 2000);
     $('#sidebar').click(function(){ $('.ui.sidebar').sidebar('toggle'); });
+    $('.apps.ui.accordion').accordion();
   </script>
 </body>
 </html>

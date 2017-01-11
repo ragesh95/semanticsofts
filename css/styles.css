@@ -1,0 +1,30 @@
+
+body {
+  background-color: lightgrey;
+}
+
+.cstyle{
+  border: 1px solid red;
+}
+
+.appslist {
+  color: white;
+  font-size: 15px;
+}
+
+.ui.shape img{
+  margin-top: 61px;
+}
+
+.header{
+  color: blue;
+}
+
+#extra{
+  margin-top: -700px;
+}
+
+#sideimage{
+  margin-top: 50px;
+  margin-left: -700px;
+}
