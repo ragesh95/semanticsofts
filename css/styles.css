@@ -16,6 +16,47 @@ body {
   margin-top: 61px;
 }
 
+#mobilemenu{
+  display: none;
+}
+
+@media only screen and (max-height:500px;){
+  #webmenu{
+    display: none;
+  }
+  #mobilemenu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width:760px) {
+
+  #webmenu{
+    display: none;
+  }
+  #mobilemenu {
+    display: flex;
+  }
+
+  .ui.shape img{
+    display:none;
+  }
+  .ui.shape {
+    margin-top: -70px;
+  }
+
+  .form-holder {
+      background: rgba(255,255,255,0.2);
+      margin-top: 300px;
+      border-radius: 3px;
+  }
+
+  #contactform{
+      height: 400px;
+  }
+
+}
+
 .header{
   color: blue;
 }
@@ -42,4 +83,8 @@ body {
 #sideimage{
   margin-top: 50px;
   margin-left: -700px;
+}
+
+#contactform{
+    margin-top: 100px;
 }

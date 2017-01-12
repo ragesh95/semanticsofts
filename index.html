@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="ui top fixed stackable labeled icon menu">
+  <div class="ui top fixed stackable labeled icon menu" id="webmenu">
     <a class="item" id="sidebar">
       <i class="red sidebar icon"></i>
       Menu
     </a>
-    <div class="ui sidebar vertical left secondary inverted menu">
+    <div class="ui sidebar vertical left secondary inverted menu extrasidebar" >
       <div class="item">
         What's new?
       </div>
@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <h1 class="ui secondary yellow header" style="width:100px;margin-top:0.7%;margin-left:auto;font-size:40px;">
+    <h1 class="ui secondary yellow header" style="width:100px;margin-top:0.7%;margin-left:auto;margin-right:auto;font-size:40px;">
       Softs
     </h1>
     <a class="active right item" style="border-right:1px solid lightgrey;">
@@ -54,10 +54,56 @@
       <i class="green info circle icon"></i>
       About
     </a>
-    <a class="item">
+    <a class="item" href="contact/index.html">
       <i class="green call icon"></i>
       Contact
     </a>
+  </div>
+
+  <div class="ui labeled icon menu" id="mobilemenu">
+    <div class="item">
+      <a class="item" id="mainsidebar">
+        <i class="red sidebar icon"></i>
+        Menu
+      </a>
+      <div class="ui sidebar vertical left secondary inverted menu mainsidebar">
+        <div class="item">
+          <a href="">
+            <i class="green home icon">
+              Home
+            </i>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="green calculator icon">
+              Calculator
+            </i>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="green setting icon">
+              Service
+            </i>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="green info icon">
+              About
+            </i>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <i class="green call icon">
+              Contact
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="ui grid">
@@ -232,10 +278,20 @@
 
   <footer class="ui container">
     <div class="ui one column center aligned grid">
-      <i class="ui huge facebook icon"></i>
-      <i class="ui huge twitter icon"></i>
-      <i class="ui huge google plus icon"></i>
-      <i class="ui huge instagram icon"></i>
+      <div class="ui stackable equal width grid">
+        <div class="column">
+          <i class="ui huge facebook icon"></i>
+        </div>
+        <div class="column">
+          <i class="ui huge twitter icon"></i>
+        </div>
+        <div class="column">
+          <i class="ui huge google plus icon"></i>
+        </div>
+        <div class="column">
+          <i class="ui huge instagram icon"></i>
+        </div>
+      </div>
     </div>
   </footer>
   <script>
@@ -247,7 +303,8 @@
         i=0;
     }
     setInterval(flipit, 2000);
-    $('#sidebar').click(function(){ $('.ui.sidebar').sidebar('toggle'); });
+    $('#sidebar').click(function(){ $('.extrasidebar').sidebar('toggle'); });
+    $('#mainsidebar').click(function(){ $('.mainsidebar').sidebar('toggle'); });
     $('.apps.ui.accordion').accordion();
   </script>
 </body>
